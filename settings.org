@@ -45,7 +45,6 @@
   (global-linum-mode 1)
   (defalias 'yes-or-no-p 'y-or-n-p)
   (display-time-mode 1)
-  (display-battery-mode 1)
   (setq column-number-mode t)
   (global-hl-line-mode 1)
   (electric-pair-mode 1)
@@ -158,7 +157,8 @@ this is for setting the indentation.
 (ivy-mode 1)
 (setq ivy-use-virtual-buffers t)
 (setq enable-recursive-minibuffers t)
-(global-set-key "\C-s" 'swiper)
+(global-set-key "\C-r" 'swiper)
+(global-set-key (kbd "C-s") 'isearch-forward-regexp)
 (global-set-key (kbd "C-c C-r") 'ivy-resume)
 (global-set-key (kbd "<f6>") 'ivy-resume)
 (global-set-key (kbd "M-x") 'counsel-M-x)
@@ -335,7 +335,7 @@ https://www.emacswiki.org/emacs/Iedit
 
 * themes
 #+BEGIN_SRC emacs-lisp
-(load-theme 'exotica t)
+;; (load-theme 'exotica t)
 #+END_SRC
 
 ** exotica
