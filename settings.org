@@ -161,7 +161,7 @@ this is for setting the indentation.
 (global-set-key (kbd "C-s") 'isearch-forward-regexp)
 (global-set-key (kbd "C-c C-r") 'ivy-resume)
 (global-set-key (kbd "<f6>") 'ivy-resume)
-(global-set-key (kbd "M-x") 'counsel-M-x)
+;(global-set-key (kbd "M-x") 'counsel-M-x)
 ;(global-set-key (kbd "C-x C-f") 'counsel-find-file) ;;; keep IDO mode for find file
 (global-set-key (kbd "M-y") 'counsel-yank-pop)
 (global-set-key (kbd "<f1> f") 'counsel-describe-function)
@@ -203,7 +203,7 @@ For details see: [[https://magit.vc/screenshots/][magit documentation & walkthro
 
 *** codes
   #+BEGIN_SRC emacs-lisp
-  (require 'magit)
+;;  (require 'magit)
   #+END_SRC
 
 ** iedit
@@ -307,7 +307,7 @@ https://www.emacswiki.org/emacs/Iedit
 #+END_SRC
 ** which key
    #+BEGIN_SRC emacs-lisp
-(which-key-mode 1)
+;; (which-key-mode 1)
 #+END_SRC
 ** csv mode
 #+BEGIN_SRC emacs-lisp
